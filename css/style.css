@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/* Body/Html*/
+html{
+  height: 100%;
+  margin: auto;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background-color: #262525;
+  color: #7b7b7b;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+/* Header Background*/
+.headerbackground {
+  position:relative;
+  display: block;
+  width: 100%;
+  height: 370px;
+  padding-top: 5px;
+  background-color: #FFFFFF;
+  background: url("../img/header.jpg");
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* Cartão principal*/
+.cartao{
+
+  margin-top: 150px;   margin-left: auto;   margin-right: auto;
+  height: 400px;   width: 800px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  background-color: #262525;
+  transition: 1s; 
+}
+.Titulos{
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.cartao h4{
+  display: block;
+  width: 100%;
+  font-weight: 900;
+  color: #7b7b7b;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 29%);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.cartao h6{
+  display: block;
+  width: 100%;
+  font-weight: 300;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  color: #7b7b7b;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 29%);
+  text-transform: capitalize;
+}
+ul{
+  float: left;
+  margin-top: 0;
+    margin-bottom: 10px;
+}
+ul li {
+  list-style-type: none;
+}
+.title{
+  display: block;
+  float: left;
+  color: #7b7b7b;
+  line-height: 26px;
+}
+ul li i {
+  font-size: 23px;
+}
+ul li .content{
+  display: block;
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7b7b7b;
+}
+.clearfix{
+  clear: both;
+}
+.icons{
+  float: left;
+}
+.fa {
+  text-decoration: none;
+color: #7b7b7b;
+}
+.fa-linkedin {
+  margin-right: 50px;
+  transition: 1s;
+}
+
+.fa-linkedin:hover, #github:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+#github{
+  font-size: 60px;
+  transition: 1s;
+  text-decoration: none;
+}
+/* Cartão Bio*/
+.cartao2{
+  padding: 20px;
+  margin-left: auto;   margin-top: 50px;   margin-right: auto;
+  height: 250px;   width: 800px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  background-color: #262525;
+  transition: 1s;
+
+}
+.cartao2 p{
+  margin: 0;
+  color: #7b7b7b;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 29%);
+  text-align: center;
+}
+.linha{
+  margin-top: 5px;
+  width:760px ;
+  background-color: white;
+  border: 1px solid white
+}
+/* Imgs*/
+#p1 {
+  
+  width: 300px;
+  float: right!important; 
+  height: auto;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+#p2{
+  display: none;
+}
+/* Botões */
+.botoes{
+  padding: 2px;
+  height: auto;
+  margin-left: auto;   margin-right: auto;
+  animation-delay: 1s;
+  text-align: center;
+}
+.botoes a{
+  text-decoration: none;
+  color: inherit;
+}
+.botoes a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+.contato, .curriculo{
+  border: none;
+  margin: 10px 25px  25px 50px;
+  background: #0395a0;
+  color: #282828;
+  width: 180px;
+  border-radius: 5px;
+  transition: 1s;
+  font-weight: bold;
+}
+.contato:hover, .curriculo:hover{
+  background: #72ebb9;
+  cursor: pointer;
+}
+
+/* Responsive */
+  @media only screen and (max-width: 800px) {
+  .Titulos{
+    padding-top: 120px;
+
+    }
+  .cartao{
+    height: 450px;   width:350px;
+  }
+
+  .cartao2{
+    height: 530px;   width:350px;
+
+  }
+
+  .linha{
+    margin-top: 5px;
+    width:300px ;
+    background-color: white;
+    border: 1px solid white
+  }
+
+  #p1{
+  display: none;
+    }
+  #p2{
+    margin-right: auto;   margin-left: auto;   margin-top: 100px;   margin-bottom: -430px;
+    width: 350px;
+    position: relative;
+    display: block;
+    z-index: 99;
+  }
+
+}
